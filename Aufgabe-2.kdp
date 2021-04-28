@@ -1,0 +1,18 @@
+{ RobotKarol macht ein Schritt zurück }
+
+Methode Umdrehen
+  schnell
+  LinksDrehen()
+  LinksDrehen()
+  langsam
+endeMethode
+
+Methode SchrittZurueck
+  Umdrehen
+  Schritt
+  Umdrehen
+endeMethode
+
+Programm
+  SchrittZurueck
+endeProgramm

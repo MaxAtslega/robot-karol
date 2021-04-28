@@ -1,0 +1,31 @@
+{ RobotKarol baut ein Becken um seine Welt
+und baut anschlieﬂend es wieder ab.}
+
+Methode BaueBecken
+  wiederhole 3 mal
+    wiederhole 4 mal
+      wiederhole solange NichtIstWand
+        Hinlegen
+        Schritt
+      *wiederhole
+      LinksDrehen
+    *wiederhole
+  *wiederhole
+*Methode
+
+Methode AbbauenBecken
+  wiederhole solange IstZiegel
+    wiederhole 4 mal
+      wiederhole solange NichtIstWand
+        Aufheben
+        Schritt
+      *wiederhole
+      LinksDrehen
+    *wiederhole
+  *wiederhole
+*Methode
+
+Programm
+  BaueBecken
+  AbbauenBecken
+*Programm

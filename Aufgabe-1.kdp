@@ -1,0 +1,12 @@
+{ RobotKarol dreht sich um 180 Grad }
+
+Methode Umdrehen
+  schnell
+  LinksDrehen()
+  LinksDrehen()
+  langsam
+*Methode
+
+Programm
+  Umdrehen
+*Programm
