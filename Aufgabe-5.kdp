@@ -16,7 +16,7 @@ Anweisung NachRechts
   *wenn
 *Anweisung
 
-Anweisung Koordinieren()
+Anweisung Wende
   wenn IstSüden dann
     NachLinks
   sonst
@@ -24,17 +24,17 @@ Anweisung Koordinieren()
   *wenn
 *Anweisung
 
-Anweisung SchachbrettMuster()
+Anweisung SchachbrettMuster
   wiederhole
     wiederhole
       MarkeSetzen
       wenn NichtIstWand dann Schritt *wenn
       wenn NichtIstWand dann Schritt *wenn
     *wiederhole solange NichtIstWand
-    Koordinieren
+    Wende
   *wiederhole solange NichtIstWand
 *Anweisung
 
 Programm
-  SchachbrettMuster()
+  SchachbrettMuster
 *Programm
