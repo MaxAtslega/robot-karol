@@ -21,3 +21,21 @@ Zusatz: Ein Becken beliebiger Höhe soll abgebaut werden können.
 ### Aufgabe 5
 Schreibe ein Programm, mit dem Karol ein Schachbrettmuster (mit gelben Marken) im ganzen Raum verlegt. Dieses Programm soll aus selbstdefinierten Anweisungen bestehen, das eigentliche Programm ist dann aus diesen Anweisungen zusammengesetzt.
 Zusatz: Das Programm soll in Räumen beliebiger Größe funktionieren
+
+### Aufgabe 6
+In der Karol – Welt (Aufgabe-6.kdw) stehen Türme, irgendwo auf dem Feld. Diese Türme sollen:
+- gefunden werden
+- abgebaut werden
+- steht Karol am Ende, so soll er zum Anfang zurückgehen.
+
+### Aufgabe 7
+Dort wo in Aufgabe 6 Türme standen, soll Karol diese im zweiten Durchgang wieder aufbauen (Höhe der Türme jeweils 3 Ziegel).
+
+### Aufgabe 8
+Karol soll alleine aus dem Gang (aufgabe8.kdw) in die Freiheit finden. Die Programmeinstellungen müssen vorher geändert werden, damit Karol nicht über die Ziegel geht. → Anzahl der Ziegel, um die Karol maximal… auf 0 Stellen
+
+### Aufgabe 9
+Hier sind zwei Gänge vorhanden (aufgabe9.kdw), auch hier soll der Weg in die Freiheit gefunden werden.
+
+### Aufgabe 10
+Erweiterung auf 5 Gänge… (aufgabe10.kdw).

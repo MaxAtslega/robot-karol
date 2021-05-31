@@ -1,0 +1,101 @@
+Anweisung NachLinks
+  LinksDrehen
+  wenn NichtIstWand dann
+    Schritt
+    LinksDrehen
+  *wenn
+*Anweisung
+
+Anweisung NachRechts
+  RechtsDrehen
+  wenn NichtIstWand dann
+    Schritt
+    RechtsDrehen
+  *wenn
+*Anweisung
+
+
+Anweisung WendeHin
+  wenn IstSüden dann
+    NachLinks
+  sonst
+    NachRechts 
+  *wenn
+*Anweisung
+
+Anweisung WendeZurück
+  wenn IstOsten dann
+    NachLinks
+  sonst
+    NachRechts
+  *wenn
+*Anweisung
+
+
+Anweisung NachWestenOritieren
+   wiederhole solange nicht IstWesten
+      LinksDrehen
+   *wiederhole
+*Anweisung
+
+Anweisung NachSüdenOritieren
+   wiederhole solange nicht IstSüden
+      LinksDrehen
+   *wiederhole
+*Anweisung
+
+Anweisung TürmeAufheben
+  wiederhole
+    wiederhole
+      wiederhole solange IstZiegel 
+        Aufheben(IstZiegel)
+        wenn nicht IstZiegel dann
+          wenn NichtIstWand dann Schritt *wenn
+          MarkeSetzen(rot)
+        *wenn
+      *wiederhole
+      wenn NichtIstWand dann Schritt *wenn
+    *wiederhole solange NichtIstWand
+    WendeHin
+  *wiederhole solange NichtIstWand
+*Anweisung
+
+Anweisung Umdrehung
+  RechtsDrehen()
+  RechtsDrehen()
+*Anweisung
+
+Anweisung TürmeAufbauen
+  wiederhole
+    wiederhole
+      wiederhole solange IstMarke(rot)
+        MarkeLöschen()
+        wenn NichtIstWand dann Schritt *wenn
+        Umdrehung()
+        Hinlegen(3)
+        Umdrehung()
+      *wiederhole
+      wenn NichtIstWand dann Schritt *wenn
+    *wiederhole solange NichtIstWand
+    WendeHin
+  *wiederhole solange NichtIstWand
+*Anweisung
+
+Anweisung ZurückgehenBisMarkeGelb
+  wenn IstMarke(gelb) dann NachSüdenOritieren sonst 
+    NachWestenOritieren 
+    wiederhole solange nicht IstMarke(gelb)
+      wiederhole solange NichtIstWand Schritt *wiederhole
+      WendeZurück
+    *wiederhole
+    NachSüdenOritieren
+  *wenn
+*Anweisung
+
+Programm
+  TürmeAufheben
+  ZurückgehenBisMarkeGelb
+  TürmeAufbauen
+*Programm
+
+
